@@ -24,7 +24,7 @@ def ask_azure_openai(history):
     """Send chat history to Azure OpenAI and return the assistant's reply"""
     payload = {
         "messages": history,
-        "max_tokens": 200,
+          "max_tokens": 4096,
         "temperature": 0.7
     }
     try:
