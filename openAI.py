@@ -68,9 +68,9 @@ def ask_azure_openai(prompt: str, history: list | None = None) -> list:
 
     payload = {
         "messages": history,
-        "max_tokens": 200,
+           "max_tokens": 4096,
         "temperature": 0.7,
-    }
+0
 
     try:
         response = requests.post(url, headers=headers, json=payload)
